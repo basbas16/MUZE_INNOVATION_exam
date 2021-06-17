@@ -1,5 +1,3 @@
-input = int(input("Please enter number: "))
-
 def primeNumbers(number):
     ans = 0
     for num in range(2, number + 1):
@@ -10,5 +8,6 @@ def primeNumbers(number):
            else:
                ans += 1
     return ans
-    
+
+input = int(input("Please enter number: "))
 print(primeNumbers(input))

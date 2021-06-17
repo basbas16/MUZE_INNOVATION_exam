@@ -1,7 +1,5 @@
 import math
 
-text = input("input: ")
-
 def convert(text):
     if(text.find("°C") != -1):
         c_temp = int(text[0:text.find("°")])
@@ -20,4 +18,5 @@ def convert(text):
     else:
         return "error"
 
+text = input("input: ")
 print(convert(text))
