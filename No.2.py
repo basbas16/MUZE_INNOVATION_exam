@@ -13,14 +13,9 @@ def plantTrees(w,l,g):
                 strr[i] = "o"
                 tree += 1
         for i in range(len):
-            # print(7%4)
             if (strr[i] == "o" and (i + g + 1) > len and strr[(i + g + 1) % len] != "o"):
                 return 0
-            #     # if (i + g + 1) > len(str):
-            #
-            #     return 0
         return tree
-
 
 w = int(input())
 l = int(input())
