@@ -17,4 +17,5 @@ while True:
         break
     else:
         str_list.append(text)
+cap_check = str_list[0].isupper()
 print(missingLetter(str_list,cap_check))
