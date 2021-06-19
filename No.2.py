@@ -2,9 +2,9 @@
 def plantTrees(w,l,g):
     tree = 0
     if g == 0:
-        return (w * l) - 1
+        return (w + l) * 2
     else:
-        len = (w * l) - 1
+        len = (w + l) * 2
         strr = []
         for i in range(len):
             strr.append("-")
@@ -21,4 +21,4 @@ w = int(input())
 l = int(input())
 g = int(input())
 
-print(plantTrees(w,l,g))
+print(plantTrees(w - 1,l - 1,g))
